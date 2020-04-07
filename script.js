@@ -19,6 +19,11 @@ const textarea = document.createElement('textarea');
 textarea.classList.add('textarea');
 block1.appendChild(textarea);
 
+const description = document.createElement('div');
+description.classList.add('description');
+block1.appendChild(description);
+description.innerHTML = '<b>Для переключения языка нажмите левый Command, если у Вас MacOS или левый Win, если у Вас Windows :) (Input должен быть в фокусе).</b>';
+
 var isChange = true;
 var keyLayout = [
     { eng : '1', rus : '1', id : 'Digit1' },
