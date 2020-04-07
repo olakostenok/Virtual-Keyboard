@@ -1,0 +1,144 @@
+body{
+background-color: rgb(111, 165, 147);
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.block1 {
+    height: 50%;
+}
+
+
+.title {
+    margin: 0 auto;
+    font-size: 2em;
+    margin: 3% auto;
+    width: 100%;
+    text-align: center;
+    color: #004134;
+    letter-spacing: 4px;
+}
+
+.line {
+    margin: 0 auto;
+    margin-bottom: 3%;
+    height: 2px;
+    background: #fff;
+    border: none;
+    width: 50%
+}
+
+.textarea {
+    width: 90%;
+    resize: none;
+    outline: none;
+    border-radius: 10px;
+    border: 2px solid #fff;
+    height: 5rem;
+    font-size: 20px;
+    color:#fff;
+    padding: 2%;
+    background-color: #004134;
+   
+}
+
+.textarea:focus {
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+}
+
+.block2 {
+    width: 80%;
+    display:flex;
+}
+
+.keyboard {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 50%;
+    padding: 5px 0;
+    background: #004134;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+    user-select: none;
+    transition: bottom 0.4s;
+    text-align: center;
+}
+
+.button { 
+    outline: none;
+    cursor: pointer;
+    height: 50px;
+    width: 4%;  
+    margin: 3px;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    font-size: 1rem;
+    display: inline-flex;
+    text-align: center;
+    justify-content: center;
+    position: relative;
+    vertical-align: bottom;
+}
+
+.backspaceButton {
+    width: 8%; 
+}
+
+.tabButton {
+    width: 6%; 
+}
+
+.capsLockButton{
+    width: 10%; 
+}
+
+.capsLockButton-activatable::after {
+    content: '';
+    top: 10px;
+    left: 10px;
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 50%;
+}
+
+.capsLockButton-active::after {
+    background: #88ff00;
+}
+
+.enterButton {
+    width: 9%; 
+}
+
+.shiftLeft {
+    width: 13%;
+}
+
+.shiftRight {
+    width: 8%;
+}
+
+.shiftRight > i {
+    transform: rotate(-90deg);
+}
+
+.shiftLeft > i {
+    transform: rotate(-90deg);
+}
+
+.spaceButton {
+    width: 27%;
+}
+
+.button:active {
+    background-color: rgba(255, 255, 255, 0.12);
+}
+
